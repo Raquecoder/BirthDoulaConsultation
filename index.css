@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 1rem;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #717271;
+    margin: auto;
+    line-height: 2rem;
+    
+}
+
+/*===Header===*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0.8em;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+} 
+
+.logo {
+    width: 250px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.nav-items {
+    list-style-type: none;
+    text-transform: uppercase;
+    align-items: center;
+} 
+
+.nav-links {
+    text-decoration: none;
+    color:  rgba(110, 99, 99, 0.979);
+    cursor: pointer;
+} 
+
+.nav-links:hover,
+.nav-links:active,
+.nav-links:focus {
+    color: #a5b8b0;
+    border-bottom: 2px #a5b8b0 solid;
+}
+
+.free-consultation-btn {
+    background-color: blueviolet;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.free-consultation-btn:hover {
+    background-color: rgb(68, 20, 114);
+}
+.open-btn,
+.close-btn {
+    display: none;
+}
+
+/*====MAIN===+*/
+.main {
+    display:flex;
+    width: 100%;
+    height: 95vh;
+    background-color: #a5b8b0;
+}
+
+.text-container {
+    text-align: left;
+    width: 60%;
+    padding: 50px;
+    color: #ffffffde;
+}
+.title {
+    font-size: 1.8rem;
+    line-height: 1em;
+}
+.title,
+.subtitle{
+    margin: 40px;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.background-image {
+    height:95vh;
+}
+
+/*===MAIN SECTION===*/
+.main-section {
+    display: flex;
+    width:100%;
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em;
+    color:#717271;
+}
+
+.main-section-title{
+    font-size: 2rem;
+   
+}
+
+.main-section-paragraph {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/*====INTRO====*/
+.intro {
+    background-color: #c7a6c7;
+    padding: 5em;
+    display: flex;
+    width: 100%;
+}
+
+.text-intro-container{
+    width: 50%;
+    margin: auto 2em;
+}
+
+.title-intro {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 20px;
+} 
+
+.intro-paragraph {
+    color: #717271;
+    font-size: 1.3rem;
+    margin: 20px ;
+}
+
+.intro-profile-container {
+    width: 50%;
+}
+
+.profile-picture {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+/*====SERVICES===*/
+.services-container {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.services {
+    background-color: #fff;
+    width: 50%;
+    margin: auto 2em;
+}
+
+.birth-planning {
+    width: 50%;
+    background-color: #a5b8b0;
+    color: #fff;
+}
+
+.birth-list{
+    list-style:circle;
+    margin: 2em;
+    font-size: 1.5rem;
+}
+
+/*=====RESOURCES====*/
+.resources-container {
+    height: 80vh;
+    width: 100%;
+    padding: 8em;
+    text-align: center;
+    background-color: #6a327a;
+    color: #ffff;
+    font-size: 1.3rem;
+}
+ 
+/*====REVIEWS====*/
+.reviews-container {
+    display: flex;
+    margin: 30px;
+    font-size: 1.2rem;
+}
+.reviews-image,
+.reviews-text {
+   width: 50%;
+}
+
+.reviews-photo {
+    border-radius: 50%;
+}
+
+span {
+    color: rgb(68, 20, 114);
+    font-weight: bolder;
+}
+/*====MODAL===*/
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    padding-top: 1em;
+    height: 26.25em;
+    width: 29em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #6a327a;
+    color:whitesmoke;
+}
+
+.text-modal {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin: auto;
+}
+input{
+    padding: 5px 45px;
+}
+.close-btn-modal {
+    float:right;
+    background-color: transparent;
+    border-radius: 15px;
+    border:1px black solid;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.close-btn-modal:hover{
+    background-color: #fff;
+}
+.submit-btn {
+    background-color: blueviolet;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.submit-btn:hover {
+    background-color: rgb(68, 20, 114);
+}
+
+textarea {
+    resize:none;
+    margin-top: 5px;
+    width: 100%;
+    height:20vh;
+
+}
+
+/*===ABOUT PAGE ===*/
+.about-me{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    background-color: #a5b8b0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.title-about-me {
+    margin:auto;
+    text-transform: capitalize;
+}
+
+.main-about-me-section {
+    margin-top: 20px;
+}
+
+/*====SERVICES PAGE ====*/
+.services-page{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 40vh;
+    text-align: center;
+    background-color: #a5b8b0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.services-page-paragraph {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.intro-services{
+ background-color: #fff;
+ padding: 5em;
+ display: flex;
+ width: 100%;
+ border-bottom: 2px #6a327a solid;
+}
+
+.title-intro-services{
+    font-size: 2rem;
+    color: #717271;
+    margin-left: 20px;
+}
+
+/*===CONTACT====*/
+.modali {
+    padding-bottom: 3em;
+    resize: none;
+}
+form{
+    padding: 3em;
+}
+
+/*=====FOOTER===*/
+.footer {
+    background-color:#6a327a;
+    height: 20vh;
+    text-align: center;
+    padding-top: 2em;
+}
+.icons-footer{
+    max-width: 3%;
+    opacity: .8;
+    margin-left: .8em;
+}
+.icons-footer:hover,
+.icons-footer:focus {
+    background-color: #666;
+}
+a {
+    text-decoration: none;
+   
+}
+.book-btn {
+    margin:auto;
+}
+
+@media(max-width:810px){
+    main,
+    .intro,
+    .services-container,
+    .reviews-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container,
+    .image-container{
+        width:100%;
+    }
+    .title,
+    .subtitle {
+        margin: auto;
+    }
+    .background-image{
+        height: 50vh;
+    }
+
+    /*===MAIN SECTION===*/
+    .main-section {
+        width:100%;
+        padding: 60px 20px;
+    }
+    /*===INTRO===*/
+    .intro {
+        padding:0;
+    }
+    
+    .text-intro-container{
+        margin:auto;
+        padding:15px;
+        width:100%;
+    }
+
+    .intro-profile-container {
+        width: 100%;
+    }
+
+    .profile-picture {
+        max-width: 60%;
+    }
+    
+    .services {
+        width: 100%;
+        margin: auto;
+        padding:15px;
+    }
+
+    .birth-planning{
+        width:100%;
+    }
+    /*===RESOURCES===*/
+    .resources-container{
+        width: 100%;
+        padding:15px;
+        height: 40vh;
+    }
+    /*==REVIEWS ==*/
+    .reviews-image,
+    .reviews-text {
+        width: 100%;
+    }
+    .reviews-photo{
+        max-width: 60%;
+    }
+    
+    /*====MOBILE NAVIGATION===*/
+    /*EROOR IN THE NAVIGATION */
+    .open-btn,
+    .close-btn {
+        display: block;
+        border:none;
+        font-size: 2rem;
+        font-weight: bolder;
+        background-color: transparent;
+        color:#6a327a;
+    }
+    .navigation {
+      display: none;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh;
+        position: absolute;
+        background-color:white;
+        font-size: 1.2rem;
+        top:0;
+        left: 10%;
+        bottom:0;
+        right:0; 
+    }
+    
+    .modal {
+        margin: 35px 15px;
+    }
+    textarea {
+        resize: none;
+    }
+
+
+    .intro-services{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+       }
+
+    }
+    @media(max-width:428px){
+        .modal{
+            width: 100%;
+            height: 60vh;
+            margin: 0 auto;
+        }
+        .modali{
+            resize:none;
+        }
+    
+      textarea {
+        resize: none;
+        width: 100%;
+      }
+  
+      .close-btn-modal{
+        margin-right: 10em;
+        }
+
+      .services-page{
+        height: 60vh;
+      }
+           
+     }
+
+   
+
+
+   
