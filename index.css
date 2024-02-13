@@ -50,7 +50,6 @@ body {
 } 
 
 .nav-links:hover,
-.nav-links:active,
 .nav-links:focus {
     color: #a5b8b0;
     border-bottom: 2px #a5b8b0 solid;
@@ -67,6 +66,10 @@ body {
 
 .free-consultation-btn:hover {
     background-color: rgb(68, 20, 114);
+}
+
+.anchor {
+    color: white;
 }
 .open-btn,
 .close-btn {
@@ -214,45 +217,8 @@ span {
     color: rgb(68, 20, 114);
     font-weight: bolder;
 }
-/*====MODAL===*/
-.modal {
-    display: none;
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin: auto;
-    padding-top: 1em;
-    height: 26.25em;
-    width: 29em;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px 2px #666;
-    background-color: #6a327a;
-    color:whitesmoke;
-}
+/*====CONTACT FORM===*/
 
-.text-modal {
-    display: flex;
-    flex-direction: column;
-    width:80%;
-    margin: auto;
-}
-input{
-    padding: 5px 45px;
-}
-.close-btn-modal {
-    float:right;
-    background-color: transparent;
-    border-radius: 15px;
-    border:1px black solid;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    cursor:pointer;
-}
-.close-btn-modal:hover{
-    background-color: #fff;
-}
 .submit-btn {
     background-color: blueviolet;
     padding: 15px 30px;
